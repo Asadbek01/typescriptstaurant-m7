@@ -19,7 +19,7 @@ const Home = () => {
                   className='d-block w-100'
                   src={pastaObject.image}
                   alt='First slide'
-                  onClick={(e) => setSelectedDish(pastaObject)}
+                  onClick={() => setSelectedDish(pastaObject)}
                 />
                 <Carousel.Caption>
                   <h3>{pastaObject.name}</h3>

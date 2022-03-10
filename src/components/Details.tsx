@@ -6,13 +6,13 @@ import { Col, Row, Container } from 'react-bootstrap'
 import { Dish } from '../type'
 
 const Details = () => {
-  const [pasta, setPasta] = useState <Dish | undefined>(undefined)
+  const [pasta, setPasta] = useState <Dish>()
 
   const params = useParams()
 
   useEffect(() => {
     let pastaId = params.pastaId
-    let pastaToShow = dishes.find((pasta) => pasta.id.toString() === pastaId)
+    let pastaToShow = dishes.find((pasta) => pasta.id.toString() === pastaId)!
     setPasta(pastaToShow)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

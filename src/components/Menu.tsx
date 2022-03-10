@@ -11,7 +11,7 @@ const Menu = () => (
             <img src={pasta.image} alt='some pasta pic' />
           </Link>
           <h4>{pasta.name}</h4>
-          <Badge> {pasta.price}</Badge>
+          <Badge >{pasta.price}</Badge>
           <Badge>{pasta.label}</Badge>
         </Col>
       </Row>
